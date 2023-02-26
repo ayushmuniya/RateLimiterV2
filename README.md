@@ -3,7 +3,7 @@
 ## Sliding window log algorithm.
 It works as follows:
 
-The algorithm keeps track of request timestamps. Timestamp data is usually kept in cache, such as sorted sets of Redis [8].
+The algorithm keeps track of request timestamps.
 
 When a new request comes in, remove all the outdated timestamps. Outdated timestamps are defined as those older than the start of the current time window.
 
